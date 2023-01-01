@@ -1,11 +1,12 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
-import List from "./pages/list/List";
+import UserList from "./pages/list/UserList";
+import ProductList from "./pages/list/ProductList";
+import TaskList from "./pages/list/Tasklist";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { productInputs, userInputs } from "./formSource";
-import "./style/dark.scss";
+import { productInputs, taskInputs, userInputs } from "./formSource";
 
 function App() {
  
@@ -17,7 +18,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
             <Route path="users">
-              <Route index element={<List />} />
+              <Route index element={<UserList/>} />
               <Route path=":userId" element={<Single />} />
               <Route
                 path="new"
@@ -25,11 +26,19 @@ function App() {
               />
             </Route>
             <Route path="products">
-              <Route index element={<List />} />
+              <Route index element={<ProductList />} />
               <Route path=":productId" element={<Single />} />
               <Route
                 path="new"
                 element={<New inputs={productInputs} title="Add new Product" />}
+              />
+            </Route>
+            <Route path="tasks">
+              <Route index element={<TaskList/>} />
+              <Route path=":taskID" element={<Single />} />
+              <Route
+                path="new"
+                element={<New inputs={taskInputs} title="Add new Task" />}
               />
             </Route>
           </Route>

@@ -8,7 +8,7 @@ export const userColumns = [
     renderCell: (params) => {
       return (
         <div className="cellWithImg">
-          <img className="cellImg" src={params.row.img} alt="avatar" />
+          {/* <img className="cellImg" src={params.row.img} alt="avatar" /> */}
           {params.row.username}
         </div>
       );
@@ -39,12 +39,12 @@ export const userColumns = [
   },
 ];
 
+
 //temporary data
 export const userRows = [
   {
     id: 1,
     username: "Tharaka Dasunpriya",
-    img:"https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     status: "active",
     email: "Tharaka Dasunpriya@gmail.com",
     age: 35,
@@ -52,7 +52,6 @@ export const userRows = [
   {
     id: 2,
     username: "Tharaka Dasunpriya2",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun2@gmail.com",
     status: "passive",
     age: 42,
@@ -60,7 +59,6 @@ export const userRows = [
   {
     id: 3,
     username: "Tharaka Dasunpriya3",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun3@gmail.com",
     status: "pending",
     age: 45,
@@ -68,7 +66,6 @@ export const userRows = [
   {
     id: 4,
     username: "Tharaka Dasunpriya4",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun4@gmail.com",
     status: "active",
     age: 16,
@@ -76,7 +73,6 @@ export const userRows = [
   {
     id: 5,
     username: "Tharaka Dasun5",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun5@gmail.com",
     status: "passive",
     age: 22,
@@ -84,7 +80,6 @@ export const userRows = [
   {
     id: 6,
     username: "Tharaka Dasun6",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun6@gmail.com",
     status: "active",
     age: 15,
@@ -92,7 +87,6 @@ export const userRows = [
   {
     id: 7,
     username: "Tharaka Dasun7",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun7@gmail.com",
     status: "passive",
     age: 44,
@@ -100,7 +94,6 @@ export const userRows = [
   {
     id: 8,
     username: "Tharaka Dasun8",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun8@gmail.com",
     status: "active",
     age: 36,
@@ -108,7 +101,6 @@ export const userRows = [
   {
     id: 9,
     username: "Tharaka Dasun9",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun9@gmail.com",
     status: "pending",
     age: 65,
@@ -116,7 +108,6 @@ export const userRows = [
   {
     id: 10,
     username: "Tharaka Dasun99",
-    img: "https://images.pexels.com/photos/1820770/pexels-photo-1820770.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
     email: "Tharaka Dasun99@gmail.com",
     status: "active",
     age: 65,

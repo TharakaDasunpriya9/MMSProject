@@ -76,3 +76,49 @@ export const userInputs = [
     },
   ];
   
+  export const taskInputs = [
+    {
+      id: 1,
+      label: "taskTitle",
+      type: "text",
+      placeholder: "Apple Macbook Pro",
+    },
+    {
+      id: 2,
+      label: "TaskDescription",
+      type: "text",
+      placeholder: "Description",
+    },
+    {
+      id: 3,
+      label: "TaskCategory",
+      type: "text",
+      placeholder: "Computers",
+    },
+    {
+      id: 4,
+      label: "TaskPrice",
+      type: "text",
+      placeholder: "100",
+    },
+    {
+      id: 5,
+      label: "TaskStock",
+      type: "text",
+      placeholder: "in stock",
+    },
+
+    {
+      id: 6,
+      label: "TaskStock",
+      type: "text",
+      placeholder: "in stock",
+    },
+    {
+      id: 7,
+      label: "TaskStock",
+      type: "text",
+      placeholder: "in stock",
+    },
+  ];
+  

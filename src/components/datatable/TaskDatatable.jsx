@@ -1,10 +1,10 @@
-import "./datatable.scss";
+import "./taskDatatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns, userRows } from "../../datatablesource";
+import { userColumns, userRows } from "../../tasktablesource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const Datatable = () => {
+const TaskDatatable = () => {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
@@ -53,4 +53,4 @@ const Datatable = () => {
   );
 };
 
-export default Datatable;
+export default TaskDatatable;
