@@ -2,9 +2,6 @@ import "./list.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
 import UserDatatable from "../../components/datatable/UserDatatable"
-// import ProductDatatable from "../../components/datatable/ProductDatatable"
-// import UserDatatable from "../../components/datatable/UserDatatable"
-
 
 const UserList = () => {
   return (
@@ -18,4 +15,4 @@ const UserList = () => {
   )
 }
 
-export default UserList
+export default UserList;

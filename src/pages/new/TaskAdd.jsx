@@ -1,4 +1,4 @@
-import "./new.scss";
+import "./TaskAdd.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 // import { useState } from "react";
@@ -25,12 +25,12 @@ const New = ({ inputs, title }) => {
                 </div>
               ))} */}
               <div className="formInput">
-                <label>UserName</label>
-                <input type="text" placeholder="john doe">
+                <label>TaskName</label>
+                <input type="text" placeholder="Task 1">
                 </input>
               </div>
               <div className="formInput">
-                <label>UserName</label>
+                <label>TaskName</label>
                 <input type="text" placeholder="john doe">
                 </input>
               </div>

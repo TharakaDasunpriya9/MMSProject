@@ -1,7 +1,6 @@
 import "./list.scss"
 import Sidebar from "../../components/sidebar/Sidebar"
 import Navbar from "../../components/navbar/Navbar"
-import TaskDatatable from "../../components/datatable/TaskDatatable"
 import ProductDatatable from "../../components/datatable/ProductDatatable"
 
 const ProductList = () => {
@@ -16,4 +15,4 @@ const ProductList = () => {
   )
 }
 
-export default ProductList
+export default ProductList;

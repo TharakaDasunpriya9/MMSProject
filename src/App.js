@@ -1,13 +1,16 @@
 import Home from "./pages/home/Home";
 import Login from "./pages/login/Login";
 import UserList from "./pages/list/UserList";
-import ProductList from "./pages/list/ProductList";
-import TaskList from "./pages/list/Tasklist";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
+import ProductAdd from "./pages/new/ProductAdd";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { productInputs, taskInputs, userInputs } from "./formSource";
-
+// import { productInputs, taskInputs, userInputs } from "./formSource";
+import ProductList from "./pages/list/ProductList";
+import Tasklist from "./pages/list/Tasklist"
+import ProductView from "./pages/single/ProductView";
+import TaskView from "./pages/single/TaskView";
+import TaskAdd from "./pages/new/TaskAdd"
 function App() {
  
   return (
@@ -22,23 +25,23 @@ function App() {
               <Route path=":userId" element={<Single />} />
               <Route
                 path="new"
-                element={<New inputs={userInputs} title="Add new Users" />}
+                element={<New title="Add new Users" />}
               />
             </Route>
             <Route path="products">
-              <Route index element={<ProductList />} />
-              <Route path=":productId" element={<Single />} />
+              <Route index element={<ProductList/>} />
+              <Route path=":productId" element={<ProductView/>} />
               <Route
                 path="new"
-                element={<New inputs={productInputs} title="Add new Product" />}
+                element={<ProductAdd title="Add new Product"/>}
               />
             </Route>
             <Route path="tasks">
-              <Route index element={<TaskList/>} />
-              <Route path=":taskID" element={<Single />} />
+              <Route index element={<Tasklist/>} />
+              <Route path=":taskID" element={<TaskView/>} />
               <Route
                 path="new"
-                element={<New inputs={taskInputs} title="Add new Task" />}
+                element={<TaskAdd title="Add new Task"/>}
               />
             </Route>
           </Route>

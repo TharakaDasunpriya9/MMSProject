@@ -1,4 +1,4 @@
-import "./new.scss";
+import "./productAdd.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 // import { useState } from "react";
@@ -25,8 +25,8 @@ const New = ({ inputs, title }) => {
                 </div>
               ))} */}
               <div className="formInput">
-                <label>UserName</label>
-                <input type="text" placeholder="john doe">
+                <label>ProductName</label>
+                <input type="text" placeholder="Mac book">
                 </input>
               </div>
               <div className="formInput">
