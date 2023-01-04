@@ -39,10 +39,10 @@ const Sidebar = () => {
               <span>Users</span>
             </li>
           </Link>
-          <Link to="/products" style={{ textDecoration: "none" }}>
+          <Link to="/materials" style={{ textDecoration: "none" }}>
             <li>
               <StoreIcon className="icon" />
-              <span>Products</span>
+              <span>Materials</span>
             </li>
           </Link>
           <Link to="/tasks" style={{ textDecoration: "none" }}>
@@ -51,10 +51,12 @@ const Sidebar = () => {
             <span>Tasks</span>
           </li>
           </Link>
+          <Link to="/orders" style={{ textDecoration: "none" }}>
           <li>
             <LocalShippingIcon className="icon" />
             <span>Orders</span>
           </li>
+          </Link>
           <Link to="/warehouse" style={{ textDecoration: "none" }}>
           <li>
             <InsertChartIcon className="icon" />

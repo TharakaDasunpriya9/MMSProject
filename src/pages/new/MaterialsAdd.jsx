@@ -1,9 +1,9 @@
-import "./productAdd.scss";
+import "./MaterialsAdd.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 // import { useState } from "react";
 
-const New = ({ inputs, title }) => {
+const MaterialsAdd = ({ inputs, title }) => {
   // const [file, setFile] = useState("");
 
   return (
@@ -25,12 +25,12 @@ const New = ({ inputs, title }) => {
                 </div>
               ))} */}
               <div className="formInput">
-                <label>ProductName</label>
+                <label>MaterialsName</label>
                 <input type="text" placeholder="Mac book">
                 </input>
               </div>
               <div className="formInput">
-                <label>UserName</label>
+                <label>MaterialsName</label>
                 <input type="text" placeholder="john doe">
                 </input>
               </div>
@@ -78,4 +78,4 @@ const New = ({ inputs, title }) => {
   );
 };
 
-export default New;
+export default MaterialsAdd;
