@@ -53,13 +53,14 @@ const Sidebar = () => {
           </Link>
           <li>
             <LocalShippingIcon className="icon" />
-            <span>Income Reports</span>
+            <span>Orders</span>
           </li>
-          <p className="title">USEFUL</p>
+          <Link to="/warehouse" style={{ textDecoration: "none" }}>
           <li>
             <InsertChartIcon className="icon" />
-            <span>Stats</span>
+            <span>Warehouse</span>
           </li>
+          </Link>
           <li>
             <NotificationsNoneIcon className="icon" />
             <span>Notifications</span>

@@ -11,6 +11,9 @@ import Tasklist from "./pages/list/Tasklist"
 import ProductView from "./pages/single/ProductView";
 import TaskView from "./pages/single/TaskView";
 import TaskAdd from "./pages/new/TaskAdd"
+import WarehouseList from "./pages/list/WarehouseList";
+import WarehouseView from "./pages/single/WarehouseView";
+import WarehouseAdd from "./pages/new/WarehouseAdd";
 function App() {
  
   return (
@@ -42,6 +45,14 @@ function App() {
               <Route
                 path="new"
                 element={<TaskAdd title="Add new Task"/>}
+              />
+            </Route>
+            <Route path="warehouse">
+              <Route index element={<WarehouseList/>} />
+              <Route path=":warehouseID" element={<WarehouseView/>} />
+              <Route
+                path="new"
+                element={<WarehouseAdd title="Add new warehouse"/>}
               />
             </Route>
           </Route>
