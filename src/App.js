@@ -1,13 +1,9 @@
 import Home from "./pages/home/Home";
-import Login from "./pages/login/Login";
 import UserList from "./pages/list/UserList";
 import Single from "./pages/single/Single";
 import New from "./pages/new/New";
-import ProductAdd from "./pages/new/MaterialsAdd";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import ProductList from "./pages/list/MaterialsList";
 import Tasklist from "./pages/list/Tasklist"
-import ProductView from "./pages/single/MaterialsView";
 import TaskView from "./pages/single/TaskView";
 import TaskAdd from "./pages/new/TaskAdd"
 import WarehouseList from "./pages/list/WarehouseList";
@@ -19,6 +15,9 @@ import OrdersAdd from "./pages/new/OrdersAdd";
 import MaterialsList from "./pages/list/MaterialsList";
 import MaterialsView from "./pages/single/MaterialsView";
 import MaterialsAdd from "./pages/new/MaterialsAdd";
+import LoginPage from "./pages/login/Login";
+import Login from "./pages/login/Login";
+
 function App() {
  
   return (
@@ -26,8 +25,11 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/">
-            <Route index element={<Home />} />
-            <Route path="login" element={<Login />} />
+            <Route index element={<LoginPage/>}/>
+            {/* <Route index element={<Home />} /> */}
+            <Route path="home">
+              <Route index element={<Home/>} />
+            </Route>
             <Route path="users">
               <Route index element={<UserList/>} />
               <Route path=":userId" element={<Single />} />
@@ -35,6 +37,9 @@ function App() {
                 path="new"
                 element={<New title="Add new Users" />}
               />
+            </Route>
+            <Route path="login">
+              <Route index element={<LoginPage/>} />
             </Route>
             <Route path="materials">
               <Route index element={<MaterialsList/>} />
@@ -66,6 +71,14 @@ function App() {
               <Route
                 path="new"
                 element={<OrdersAdd title="Add new Orders"/>}
+              />
+            </Route>
+            <Route path="employee">
+              <Route index element={<OrdersList/>} />
+              <Route path=":employeeID" element={<OrdersView/>} />
+              <Route
+                path="new"
+                element={<OrdersAdd title="Add new Employee"/>}
               />
             </Route>
           </Route>
