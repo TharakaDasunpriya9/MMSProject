@@ -1,10 +1,10 @@
-import "./materialsDatatable.scss"
+import "./employeedatatable.scss"
 import { DataGrid } from "@mui/x-data-grid";
-import { userColumns, userRows } from "../../MaterialsTablesource";
+import { userColumns, userRows } from "../../EmployeeTableSource";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
-const MaterialsDatatable = () => {
+const EmployeeDatatable = () => {
   const [data, setData] = useState(userRows);
 
   const handleDelete = (id) => {
@@ -19,7 +19,7 @@ const MaterialsDatatable = () => {
       renderCell: (params) => {
         return (
           <div className="cellAction">
-            <Link to="/materials/test" style={{ textDecoration: "none" }}>
+            <Link to="/employee/test" style={{ textDecoration: "none" }}>
               <div className="viewButton">View</div>
             </Link>
             <div
@@ -36,8 +36,8 @@ const MaterialsDatatable = () => {
   return (
     <div className="datatable">
       <div className="datatableTitle">
-      Materials
-        <Link to="/materials/new" className="link">
+      Employee
+        <Link to="/employee/new" className="link">
           Add New
         </Link>
       </div>
@@ -53,4 +53,4 @@ const MaterialsDatatable = () => {
   );
 };
 
-export default MaterialsDatatable;
+export default EmployeeDatatable;

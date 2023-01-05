@@ -16,17 +16,18 @@ import MaterialsList from "./pages/list/MaterialsList";
 import MaterialsView from "./pages/single/MaterialsView";
 import MaterialsAdd from "./pages/new/MaterialsAdd";
 import LoginPage from "./pages/login/Login";
-import Login from "./pages/login/Login";
+import EmployeeView from "./pages/single/EmployeeView";
+import EmployeeAdd from "./pages/new/EmployeeAdd";
+import EmployeeList from "./pages/list/EmployeeList";
 
 function App() {
  
   return (
     <div className="App">
       <BrowserRouter>
-        <Routes>
+          <Routes>
           <Route path="/">
             <Route index element={<LoginPage/>}/>
-            {/* <Route index element={<Home />} /> */}
             <Route path="home">
               <Route index element={<Home/>} />
             </Route>
@@ -74,11 +75,11 @@ function App() {
               />
             </Route>
             <Route path="employee">
-              <Route index element={<OrdersList/>} />
-              <Route path=":employeeID" element={<OrdersView/>} />
+              <Route index element={<EmployeeList/>} />
+              <Route path=":employeeID" element={<EmployeeView/>} />
               <Route
                 path="new"
-                element={<OrdersAdd title="Add new Employee"/>}
+                element={<EmployeeAdd title="Add new Employee"/>}
               />
             </Route>
           </Route>
