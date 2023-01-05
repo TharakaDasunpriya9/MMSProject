@@ -69,6 +69,12 @@ const Sidebar = () => {
             <span>Warehouse</span>
           </li>
           </Link>
+          <Link to="/prototype" style={{ textDecoration: "none" }}>
+          <li>
+            <CreditCardIcon className="icon" />
+            <span>Prototype</span>
+          </li>
+          </Link>
           <li>
             <NotificationsNoneIcon className="icon" />
             <span>Notifications</span>
